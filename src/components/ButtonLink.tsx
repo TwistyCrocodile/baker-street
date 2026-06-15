@@ -14,11 +14,18 @@ const variants = {
 };
 
 export function ButtonLink({ children, className = '', variant = 'primary', ...props }: ButtonLinkProps) {
+  const classes = [
+    'inline-flex min-h-14 w-full items-center justify-center rounded-full px-7 text-center text-sm font-bold uppercase tracking-[0.12em] shadow-soft transition duration-300',
+    'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4',
+    'sm:w-auto',
+    variants[variant],
+    className,
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
-    <a
-      className={`inline-flex min-h-14 w-full items-center justify-center rounded-full px-7 text-center text-sm font-bold uppercase tracking-[0.12em] shadow-soft transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 sm:w-auto ${variants[variant]} ${className}`}
-      {...props}
-    >
+    <a className={classes} {...props}>
       {children}
     </a>
   );

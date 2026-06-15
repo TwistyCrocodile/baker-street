@@ -22,12 +22,18 @@ export type Feature = {
   Icon: LucideIcon;
 };
 
+export const whatsappHref = 'https://wa.me/77073195034';
+
+export const instagramHref = 'https://www.instagram.com/baker.street.alatau';
+
 export const heroStats: Feature[] = [
   { title: '4.8 рейтинг', Icon: Star },
   { title: 'Кофе и завтраки', Icon: Coffee },
   { title: 'Доставка', Icon: Truck },
   { title: 'Ибрагимова 12а', Icon: MapPin },
 ];
+
+export const comfortItems = ['Уютный зал', 'Завтраки каждый день', 'Доставка по району', 'Можно с ноутбуком'];
 
 export const aboutFeatures: Feature[] = [
   { title: 'Уютная атмосфера', Icon: Home },

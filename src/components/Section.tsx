@@ -14,15 +14,15 @@ export function Section({ id, eyebrow, title, children, className = '', headerCl
   return (
     <motion.section
       id={id}
-      className={`px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-28 ${className}`}
-      initial={{ opacity: 0, y: 34 }}
+      className={`px-5 py-16 sm:px-8 sm:py-24 lg:px-12 lg:py-32 ${className}`}
+      initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-90px' }}
-      transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once: true, margin: '-110px' }}
+      transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="mx-auto max-w-7xl">
         {(eyebrow || title) && (
-          <div className={`mb-10 max-w-3xl ${headerClassName}`}>
+          <div className={`mb-10 max-w-3xl sm:mb-14 ${headerClassName}`}>
             {eyebrow && (
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-baker-primary">
                 {eyebrow}
