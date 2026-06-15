@@ -22,6 +22,13 @@ export type Feature = {
   Icon: LucideIcon;
 };
 
+export type GalleryImage = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
 export const whatsappHref = 'https://wa.me/77073195034';
 
 export const instagramHref = 'https://www.instagram.com/baker.street.alatau';
@@ -80,4 +87,23 @@ export const setCards = [
   },
 ];
 
-export const galleryImages = ['/interior/1.jpg', '/interior/3.jpg', '/interior/4.jpg'];
+export const galleryImages: GalleryImage[] = [
+  {
+    src: '/interior/1.jpg',
+    alt: 'Столик у окна в Baker Street с тёплым светом и шторами',
+    width: 960,
+    height: 1280,
+  },
+  {
+    src: '/interior/3.jpg',
+    alt: 'Уютный зал Baker Street с креслами, окнами и подвесными светильниками',
+    width: 1035,
+    height: 1280,
+  },
+  {
+    src: '/interior/4.jpg',
+    alt: 'Барная зона Baker Street с деревянной отделкой и тёплыми лампами',
+    width: 998,
+    height: 1280,
+  },
+];

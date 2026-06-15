@@ -52,7 +52,7 @@ export function Hero() {
             Кофе, завтраки, выпечка и доставка любимых блюд каждый день.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href="tel:+77073195034" variant="primary" aria-label="Позвонить и забронировать столик">
+            <ButtonLink href={whatsappHref} variant="primary" aria-label="Забронировать столик в Baker Street через WhatsApp">
               Забронировать столик
             </ButtonLink>
             <ButtonLink href={whatsappHref} variant="light" aria-label="Написать Baker Street в WhatsApp">
