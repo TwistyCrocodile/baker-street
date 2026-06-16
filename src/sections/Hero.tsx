@@ -42,13 +42,13 @@ export function Hero() {
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-baker-accent sm:text-sm">
             Кафе-пекарня в Алатау
           </p>
-          <h1 className="max-w-full font-display text-[clamp(3.1rem,17vw,4.35rem)] font-semibold leading-[0.86] tracking-normal sm:text-8xl lg:text-[9.5rem]">
+          <h1 className="max-w-full font-display text-[clamp(2.25rem,10.8vw,3.1rem)] font-semibold leading-[0.86] tracking-normal sm:text-8xl lg:text-[9.5rem]">
             Baker Street
           </h1>
-          <p className="mt-7 max-w-2xl font-display text-[1.65rem] font-semibold leading-tight text-baker-accent sm:text-5xl">
+          <p className="mt-7 max-w-[18.5rem] font-display text-[1.65rem] font-semibold leading-tight text-baker-accent sm:max-w-2xl sm:text-5xl">
             Тёплая точка на карте посёлка
           </p>
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-white/88 sm:text-xl">
+          <p className="mt-5 max-w-[19rem] text-lg leading-8 text-white/88 sm:max-w-2xl sm:text-xl">
             Кофе, завтраки, выпечка и доставка любимых блюд каждый день.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -62,7 +62,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-2 gap-3 lg:grid-cols-4"
+          className="grid min-w-0 grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
@@ -70,10 +70,10 @@ export function Hero() {
           {heroStats.map(({ title, Icon }) => (
             <div
               key={title}
-              className="flex min-h-24 min-w-0 items-center gap-3 rounded-[8px] border border-white/16 bg-white/12 p-4 shadow-soft backdrop-blur-md sm:min-h-28 sm:p-5"
+              className="flex min-h-24 min-w-0 items-center gap-3 overflow-hidden rounded-[8px] border border-white/16 bg-white/12 p-4 shadow-soft backdrop-blur-md sm:min-h-28 sm:p-5"
             >
               <Icon className="h-5 w-5 shrink-0 text-baker-accent" aria-hidden="true" />
-              <span className="min-w-0 text-sm font-semibold leading-tight text-white sm:text-base">{title}</span>
+              <span className="min-w-0 break-words text-sm font-semibold leading-tight text-white sm:text-base">{title}</span>
             </div>
           ))}
         </motion.div>

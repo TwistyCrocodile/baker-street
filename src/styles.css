@@ -15,13 +15,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   background:
-    radial-gradient(circle at top left, rgba(217, 179, 130, 0.22), transparent 34rem),
+    radial-gradient(circle at top left, rgba(217, 179, 130, 0.18), transparent 34rem),
     #faf7f2;
 }
 
@@ -34,6 +36,10 @@ body::before {
   background-image: linear-gradient(rgba(45, 36, 29, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(45, 36, 29, 0.025) 1px, transparent 1px);
   background-size: 42px 42px;
+}
+
+main {
+  background: #faf7f2;
 }
 
 img {
@@ -54,4 +60,80 @@ img {
   background-image: radial-gradient(circle at center, rgba(255, 250, 243, 0.42) 0 1px, transparent 1px);
   background-size: 4px 4px;
   mix-blend-mode: soft-light;
+}
+
+.section-paper,
+.section-warm,
+.section-soft,
+.section-milk,
+.section-contact {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.section-paper > .mx-auto,
+.section-warm > .mx-auto,
+.section-soft > .mx-auto,
+.section-milk > .mx-auto,
+.section-contact > .mx-auto {
+  position: relative;
+  z-index: 1;
+}
+
+.section-paper {
+  background:
+    linear-gradient(180deg, rgba(250, 247, 242, 0) 0%, rgba(247, 243, 237, 0.58) 48%, rgba(250, 247, 242, 0) 100%),
+    #faf7f2;
+}
+
+.section-paper::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  content: '';
+  background:
+    radial-gradient(circle at 78% 16%, rgba(217, 179, 130, 0.13), transparent 28rem),
+    linear-gradient(180deg, rgba(234, 223, 206, 0.55), transparent 8rem);
+}
+
+.section-warm {
+  background:
+    radial-gradient(circle at 14% 10%, rgba(217, 179, 130, 0.12), transparent 24rem),
+    linear-gradient(180deg, #faf7f2 0%, #f7f3ed 24%, #f7f3ed 78%, #faf7f2 100%);
+}
+
+.section-soft {
+  background:
+    radial-gradient(circle at 86% 8%, rgba(255, 250, 243, 0.92), transparent 20rem),
+    linear-gradient(180deg, #faf7f2 0%, #f5efe7 38%, #f5efe7 74%, #faf7f2 100%);
+}
+
+.section-milk {
+  background:
+    linear-gradient(180deg, rgba(250, 247, 242, 0.95), rgba(255, 250, 243, 0.88) 42%, rgba(247, 243, 237, 0.82));
+}
+
+.section-contact {
+  background:
+    linear-gradient(180deg, #faf7f2 0%, #f7f3ed 52%, #faf7f2 100%);
+}
+
+.premium-card {
+  box-shadow:
+    0 18px 52px rgba(45, 36, 29, 0.085),
+    0 1px 0 rgba(255, 255, 255, 0.82) inset;
+}
+
+.premium-card:hover {
+  box-shadow:
+    0 26px 72px rgba(45, 36, 29, 0.13),
+    0 1px 0 rgba(255, 255, 255, 0.88) inset;
+}
+
+.premium-image {
+  box-shadow:
+    0 24px 70px rgba(45, 36, 29, 0.16),
+    0 1px 0 rgba(255, 250, 243, 0.45) inset;
 }

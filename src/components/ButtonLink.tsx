@@ -15,7 +15,7 @@ const variants = {
 
 export function ButtonLink({ children, className = '', variant = 'primary', ...props }: ButtonLinkProps) {
   const classes = [
-    'inline-flex min-h-14 w-full items-center justify-center rounded-full px-7 text-center text-sm font-bold uppercase tracking-[0.12em] shadow-soft transition duration-300',
+    'inline-flex min-h-14 w-full items-center justify-center rounded-full px-5 text-center text-[0.72rem] font-bold uppercase tracking-[0.08em] shadow-soft transition duration-300 hover:-translate-y-0.5 sm:px-7 sm:text-sm sm:tracking-[0.12em]',
     'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4',
     'sm:w-auto',
     variants[variant],

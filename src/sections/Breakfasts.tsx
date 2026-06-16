@@ -8,13 +8,13 @@ export function Breakfasts() {
       id="breakfasts"
       eyebrow="Завтраки"
       title="Спокойное утро, хороший кофе и блюда, к которым возвращаются."
-      className="bg-baker-cream/72"
+      className="section-warm"
     >
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {breakfasts.map((item) => (
           <motion.article
             key={item.title}
-            className="group overflow-hidden rounded-[8px] border border-baker-line bg-white shadow-soft"
+            className="premium-card group overflow-hidden rounded-[8px] border border-baker-line/80 bg-[#fffaf6]"
             whileHover={{ y: -6 }}
             transition={{ duration: 0.35, ease: 'easeOut' }}
           >

@@ -9,13 +9,13 @@ export function DeliverySets() {
       id="delivery"
       eyebrow="Доставка и сеты"
       title="Любимые блюда можно заказать домой или в офис."
-      className="bg-baker-cream/72"
+      className="section-soft"
     >
       <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
         {setCards.map(({ title, image, Icon }) => (
           <motion.article
             key={title}
-            className="overflow-hidden rounded-[8px] border border-baker-line bg-white shadow-soft"
+            className="premium-card overflow-hidden rounded-[8px] border border-baker-line/80 bg-[#fffaf6]"
             whileHover={{ y: -5 }}
             transition={{ duration: 0.35, ease: 'easeOut' }}
           >

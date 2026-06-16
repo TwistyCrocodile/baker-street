@@ -5,7 +5,7 @@ import { instagramHref, whatsappHref } from '../data';
 
 export function Contacts() {
   return (
-    <Section id="contacts" className="pb-24 pt-0 sm:pb-0">
+    <Section id="contacts" className="section-contact pb-24 pt-0 sm:pb-0">
       <div className="grid overflow-hidden rounded-[8px] bg-baker-dark text-white shadow-image lg:grid-cols-[0.95fr_1.05fr]">
         <div className="order-2 p-7 sm:p-10 lg:order-1 lg:p-14">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-baker-accent">Контакты</p>

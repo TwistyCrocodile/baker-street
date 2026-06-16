@@ -4,12 +4,12 @@ import { galleryImages } from '../data';
 
 export function Gallery() {
   return (
-    <Section id="gallery" eyebrow="Атмосфера" title="Тёплый свет, дерево, кофе и ощущение своего места.">
+    <Section id="gallery" eyebrow="Атмосфера" title="Тёплый свет, дерево, кофе и ощущение своего места." className="section-paper">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:items-start">
         {galleryImages.map((image, index) => (
           <motion.div
             key={image.src}
-            className={`aspect-[4/5] overflow-hidden rounded-[8px] shadow-image ${
+            className={`premium-image aspect-[4/5] overflow-hidden rounded-[8px] ${
               index === 2 ? 'sm:col-span-2 lg:col-span-1' : ''
             }`}
             whileHover={{ scale: 0.988 }}

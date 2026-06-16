@@ -4,8 +4,8 @@ import { whatsappHref } from '../data';
 
 export function FinalCta() {
   return (
-    <section className="px-5 py-14 sm:px-8 sm:py-20 lg:px-12">
-      <div className="mx-auto grid max-w-7xl gap-7 rounded-[8px] border border-baker-line bg-baker-dark px-6 py-9 text-white shadow-soft sm:px-9 lg:grid-cols-[1fr_auto] lg:items-center lg:px-12 lg:py-11">
+    <section className="section-milk px-5 py-14 sm:px-8 sm:py-20 lg:px-12">
+      <div className="mx-auto grid max-w-7xl gap-7 rounded-[8px] border border-white/10 bg-baker-dark px-6 py-9 text-white shadow-image sm:px-9 lg:grid-cols-[1fr_auto] lg:items-center lg:px-12 lg:py-11">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-baker-accent">Ждём в Baker Street</p>
           <h2 className="mt-4 font-display text-4xl font-semibold leading-[0.95] sm:text-5xl">
