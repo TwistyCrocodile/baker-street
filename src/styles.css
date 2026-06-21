@@ -15,13 +15,11 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   min-width: 320px;
-  overflow-x: hidden;
   background:
     radial-gradient(circle at top left, rgba(217, 179, 130, 0.18), transparent 34rem),
     #faf7f2;

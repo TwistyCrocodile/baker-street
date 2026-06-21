@@ -4,7 +4,7 @@ import { heroStats, whatsappHref } from '../data';
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[100svh] items-end overflow-hidden bg-baker-dark px-5 pb-8 pt-28 text-white sm:px-8 sm:pb-10 lg:px-12">
+    <section className="relative flex min-h-[100svh] items-end bg-baker-dark px-5 pb-8 pt-28 text-white sm:px-8 sm:pb-10 lg:px-12">
       <img
         src="/interior/1.jpg"
         alt="Тёплый интерьер кафе-пекарни Baker Street"
@@ -32,7 +32,7 @@ export function Hero() {
         </a>
       </div>
 
-      <div id="top" className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-12 overflow-hidden pb-2 lg:gap-16 lg:pb-8">
+      <div id="top" className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-12 pb-2 lg:gap-16 lg:pb-8">
         <motion.div
           className="max-w-4xl"
           initial={{ opacity: 0, y: 30 }}
